@@ -1,4 +1,4 @@
-import 'package:ecommerce/features/add_products/add_products.dart';
+import 'package:ecommerce/features/add_products/widgets/add_products.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatelessWidget {
