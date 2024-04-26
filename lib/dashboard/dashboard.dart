@@ -1,5 +1,7 @@
-import 'package:ecommerce/features/add_products/widgets/add_products.dart';
+import 'package:ecommerce/features/view_products/ui/view_products_page.dart';
 import 'package:flutter/material.dart';
+
+import '../features/add_products/ui/add_products.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
@@ -34,16 +36,19 @@ class Dashboard extends StatelessWidget {
 
               ),
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.grey.shade200,
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Colors.teal),
+                  InkWell(
+                    onTap:() {Navigator.push(context, MaterialPageRoute(builder: (context) => ViewProductsPage()));},
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade200,
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: Colors.teal),
+                      ),
+                      child: const Center(child: Text('View Product',style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16
+                      ),),),
                     ),
-                    child: const Center(child: Text('View Product',style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16
-                    ),),),
                   ),
                   InkWell(
                     onTap: (){

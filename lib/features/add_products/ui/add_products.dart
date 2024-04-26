@@ -19,7 +19,6 @@ class _AddProductState extends State<AddProduct> {
   TextEditingController descController = TextEditingController();
   TextEditingController priceController = TextEditingController();
   TextEditingController statusController = TextEditingController();
-
   final AddProductsBloc addProductsBloc = AddProductsBloc();
   final _formKey = GlobalKey<FormState>();
 
